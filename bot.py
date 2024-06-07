@@ -21,7 +21,7 @@ def generate_referral_code():
 def get_main_menu():
     keyboard = [
         [InlineKeyboardButton("Баланс", callback_data='balance')],
-        [InlineKeyboardButton("Реффералы", callback_data='referrals')],
+        [InlineKeyboardButton("Рефералы", callback_data='referrals')],
         [InlineKeyboardButton("Буст", callback_data='boost')],
     ]
     return InlineKeyboardMarkup(keyboard)
