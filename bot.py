@@ -21,7 +21,7 @@ def generate_referral_code():
 def get_main_menu():
     keyboard = [
         [InlineKeyboardButton("Баланс", callback_data='balance')],
-        [InlineKeyboardButton("Рефералы", callback_data='referrals')],
+        [InlineKeyboardButton("Рефералальная программа", callback_data='referrals')],
         [InlineKeyboardButton("Буст", callback_data='boost')],
     ]
     return InlineKeyboardMarkup(keyboard)
@@ -29,13 +29,13 @@ def get_main_menu():
 # Функция для получения меню заданий
 def get_tasks_menu():
     keyboard = [
-        [InlineKeyboardButton("Подписка на канал", callback_data='task_subscribe')],
-        [InlineKeyboardButton("Пригласить 1 друга", callback_data='task_invite_1')],
-        [InlineKeyboardButton("Пригласить 5 друзей", callback_data='task_invite_5')],
-        [InlineKeyboardButton("Пригласить 10 друзей", callback_data='task_invite_10')],
-        [InlineKeyboardButton("Пригласить 50 друзей", callback_data='task_invite_50')],
-        [InlineKeyboardButton("Пригласить 100 друзей", callback_data='task_invite_100')],
-        [InlineKeyboardButton("Приписка в нике $FP", callback_data='task_nickname')],
+        [InlineKeyboardButton("Подписка на канал.Награда: 5000$FP", callback_data='task_subscribe')],
+        [InlineKeyboardButton("Пригласить 1 друга.Награда: 1000$FP", callback_data='task_invite_1')],
+        [InlineKeyboardButton("Пригласить 5 друзей.Награда: 2000$FP", callback_data='task_invite_5')],
+        [InlineKeyboardButton("Пригласить 10 друзей.Награда: 5000$FP", callback_data='task_invite_10')],
+        [InlineKeyboardButton("Пригласить 50 друзей.Награда: 20000$FP", callback_data='task_invite_50')],
+        [InlineKeyboardButton("Пригласить 100 друзей.Награда: 50000$FP", callback_data='task_invite_100')],
+        [InlineKeyboardButton("Приписка в нике $FP.Награда: 10000$FP", callback_data='task_nickname')],
         [InlineKeyboardButton("Назад", callback_data='main_menu')],
     ]
     return InlineKeyboardMarkup(keyboard)
