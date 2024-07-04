@@ -282,7 +282,7 @@ async def check_subscription(context, user_id):
 # Основная функция
 def main() -> None:
     # Создание объекта Application и передача токена вашего бота
-    app = ApplicationBuilder().token("7479177364:AAEFNEbwQjPE_uiSZnN02ewW-G4EBZM-aD0").build()
+    app = ApplicationBuilder().token("token").build()
 
     # Регистрация обработчиков
     app.add_handler(CommandHandler('start', start))
